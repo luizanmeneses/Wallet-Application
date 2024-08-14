@@ -2,10 +2,116 @@
 
 body{
     padding: 0px;
-    margin: 0px;
+    margin: 0px; /*Os espaçamentos já vêm pré-definidos, colocamos 0 para retirar*/
     font-family: "Noto Sans", sans-serif;
+    color: #010400;
 }
 
 h1{
-    font-family: "Noto Sans", sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px; 
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px; 
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px; 
+}
+h4{
+    font-size: 16px;
+    color: #7c7c7c;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px; 
+}
+p{
+    font-size: 14px;
+    color: #7c7c7c;
+    font-weight: 500;
+}
+label{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+a{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+button{
+    background-color: #5936cd;
+    height: 56px;
+    width: 432px;
+    border-radius: 12px;
+    color: #f4f4f9;
+    font-weight: bold;
+    font-size: 16px;
+    border-color: #5936cd;
+    border-width: 2px;/*Expessura da borda*/
+    border-style: solid;/*Formato da borda*/
+}
+
+button.small{
+    background-color: #f4f4f9;
+    color: #010400;
+    font-size: 14px;
+    border-radius: 8px;
+    height: 40px;
+    width: 90px;
+}
+
+input{
+    background-color: #f4f4f9;
+    width: 100%;
+    height: 48px;
+    border-color: #06bee1;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px; 
+    color: #010400;
+    font-size: 16px;
+    padding: 6px;
+    box-sizing: border-box; /*Quando se aplica o padding, autom a caixa cresce, colocando isso
+    ele vai manter a caixa no tamanho inicial e cresce só internamente*/
+}
+/*Tamanhos das Margin-tops:*/
+.mt{
+    margin-top: 16px;
+}
+.mt.larger{
+    margin-top: 32px;
+}
+.mt.large{
+    margin-top: 24px;
+}
+.mt.small{
+    margin-top: 12px;
+}
+.mt.smaller{
+    margin-top: 6px;
+}
+.logo{
+    width: 88px;
+    height: auto;
+}
+.auth-container{/*Container geral, toda a página de fundo*/
+    width: 100vw;
+    height: 100vh;/*vw e vh p/ que fique do tamanho da tela*/
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #5936cd;
 }
