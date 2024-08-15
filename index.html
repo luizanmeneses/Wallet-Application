@@ -8,8 +8,28 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <div class="auth-container"> 
-        <div class="auth-content"></div>
+    <div class="auth-container"> <!--É a pág principal onde terá o conteúdo-->
+        <div class="auth-content"><!--A caixa de inserção dos dados p/ login-->
+            <div class="auth-content-container"><!--P/ fazer o direcionamento dos elementos-->
+                <img class="logo" src="src/img/Logo.png" alt="logo">
+                <h3 class="full-width text-left mt small">Bem vindo(a)!</h3>
+            <!--Neste h3 além das config dele, temos tbm mais essas 3-->
+                <p class="mt small">
+                    Digite seu e-mail abaixo para ter acesso à aplicação financeira Wallet Online,
+                    e ter um melhor controle dos seus gastos mensais.
+                </p>
+                <label class="mt" for="input-email">E-mail</label>
+                <input placeholder="email@exemplo.com" 
+                class="mt smaller" 
+                id="input-email"
+                type="email"
+                />
+                <button class="full-width mt large">Acessar</button>
+                <a class="mt larger" href="">Não tem conta? Faça seu cadastro aqui</a>
+            </div>
+        </div>
+        
     </div>
+
 </body>
 </html>
