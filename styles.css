@@ -63,6 +63,7 @@ button{
     border-color: #5936cd;
     border-width: 2px;/*Expessura da borda*/
     border-style: solid;/*Formato da borda*/
+    cursor: pointer;
 }
 
 button.small{
