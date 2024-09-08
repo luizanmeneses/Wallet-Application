@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallet App- Cadastrar</title>
     <link rel="stylesheet" href="../../../styles.css"><!--Essa é uma forma de ele ir lá na pasta certa, sair daqui e ir até onde o arquivo está-->
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="auth-container"> <!--É a pág principal onde terá o conteúdo-->
@@ -16,19 +17,20 @@
                 <p class="mt small">
                     Insira seu nome completo e e-mail para ter acessi ao Wallet Online e poder gerenciar suas finanças.
                 </p>
-                <label class="mt" for="input-name">Nome:</label>
-                <input placeholder="Insira seu nome completo" 
-                class="mt smaller" 
-                id="input-name"
-                type="text"
-                />
-                <label class="mt" for="input-email">E-mail</label>
-                <input placeholder="email@exemplo.com" 
-                class="mt smaller" 
-                id="input-email"
-                type="email"
-                />
-                <button class="full-width mt large">Cadastrar</button>
+                <form id="form-register" class="mt">
+                    <label for="input-name">Nome:</label>
+                    <input class="mt smaller" type="text" id="input-name" name="input-name"
+                    placeholder="Insira seu nome completo" 
+                    required 
+                     />
+                    <label class="mt" for="input-email">E-mail</label>
+                    <input class="mt smaller" type="text" id="input-email" name="input-email"
+                    placeholder="email@exemplo.com"
+                    required
+                    />
+                    <button type="submit" class="full-width mt">Cadastrar</button>
+            <!--O type submit é para que ele faça a validacao do formulário antes da ação-->
+                </form>
                 <a class="mt larger" href="../../../index.html">Já possui uma conta? Faça o seu login aqui</a>
             </div>
         </div>
